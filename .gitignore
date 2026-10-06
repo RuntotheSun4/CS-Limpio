@@ -1,0 +1,9 @@
+# R5: no scanned documents ever enter this public repo
+*.pdf
+*.PDF
+
+__pycache__/
+*.egg-info/
+build/
+dist/
+.venv/

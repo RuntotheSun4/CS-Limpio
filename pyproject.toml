@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cs-limpio"
+version = "0.1.0"
+description = "Remove the 'Scanned with CamScanner' badge from scanned PDFs, locally and losslessly."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Héctor Gerardo Lamas Ramos" }]
+requires-python = ">=3.9"
+dependencies = ["pymupdf>=1.24"]
+keywords = ["pdf", "camscanner", "watermark", "scan"]
+
+[project.urls]
+Repository = "https://github.com/RuntotheSun4/CS-Limpio"
+
+[project.scripts]
+cs-limpio = "cs_limpio:main"
+
+[tool.setuptools]
+py-modules = ["cs_limpio"]
